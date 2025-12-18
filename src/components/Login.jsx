@@ -17,6 +17,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
+      console.log('base url in login', BASE_URL)
       const res = await axios.post(
         BASE_URL + "/login",
         {

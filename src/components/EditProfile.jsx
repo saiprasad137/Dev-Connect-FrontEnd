@@ -22,6 +22,7 @@ const EditProfile = ({ user }) => {
     //Clear Errors
     setError("");
     try {
+      console.log('base url in edit profile', BASE_URL)
       const res = await axios.patch(
         BASE_URL + "/profile/edit",
         {
